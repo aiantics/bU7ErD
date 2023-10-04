@@ -16,8 +16,8 @@ if '%errorlevel%' NEQ '0' (
 :gotAdmin
 :: End BatchGotAdmin
 
-python "C:\Users\%username%\AppData\Local\XHEN\ASUSPY.py"
-python "C:\Users\%username%\AppData\Local\XHEN\ASUSPY.py"
-python "C:\Users\%username%\AppData\Local\XHEN\ASUSPY.py"
+set "userprofilepath=%userprofile%"
+for %%F in ("%userprofilepath%") do set "username=%%~nxF"
+
 python "C:\Users\%username%\AppData\Local\XHEN\ASUSPY.py"
 exit
