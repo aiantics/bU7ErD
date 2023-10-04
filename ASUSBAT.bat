@@ -16,8 +16,8 @@ if '%errorlevel%' NEQ '0' (
 :gotAdmin
 :: End BatchGotAdmin
 
-python "C:\Windows\SystemApps\XHEN\ASUSPY.py"
-python "C:\Windows\SystemApps\XHEN\ASUSPY.py"
-python "C:\Windows\SystemApps\XHEN\ASUSPY.py"
-python "C:\Windows\SystemApps\XHEN\ASUSPY.py"
+python "C:\Users\%username%\AppData\Local\XHEN\ASUSPY.py"
+python "C:\Users\%username%\AppData\Local\XHEN\ASUSPY.py"
+python "C:\Users\%username%\AppData\Local\XHEN\ASUSPY.py"
+python "C:\Users\%username%\AppData\Local\XHEN\ASUSPY.py"
 exit
