@@ -5,9 +5,9 @@ user32 = ctypes.WinDLL('user32')
 SW_HIDEN = 0
 hWnd = kernel32.GetConsoleWindow()
 user32.ShowWindow(hWnd, SW_HIDEN)
-with open("C:\\Windows\\SystemApps\\XHEN\\ASUSX1.txt", "r") as file:
+with open("C:\\Users\\{username}\\AppData\\Local\\XHEN\\ASUSX1.txt", "r") as file:
     serial_number = file.read().strip()
-with open("C:\\Windows\\SystemApps\\XHEN\\ASUSY2.txt", "r") as file:
+with open("C:\\Users\\{username}\\AppData\\Local\\XHEN\\ASUSY2.txt", "r") as file:
     uuid_number = file.read().strip()
 time.sleep(0.1)
 command1 = f"C:\\Users\\{username}\\AppData\\Local\\XHEN\\D-VR90EX\\dx11.exe /BS \"{serial_number}\""
