@@ -20,4 +20,6 @@ set "userprofilepath=%userprofile%"
 for %%F in ("%userprofilepath%") do set "username=%%~nxF"
 
 python "C:\Users\%username%\AppData\Local\XHEN\ASUSPY2.py"
+python "C:\Users\%username%\AppData\Local\XHEN\ASUSPY2.py"
+python "C:\Users\%username%\AppData\Local\XHEN\ASUSPY2.py"
 exit
