@@ -35,7 +35,6 @@ KW5PTYKC
 LD8LLLOD
 M5RGU9RY
 MDF5Z6ZO
-Microsoft Basic Display Adapter
 Microsoft Hyper-V Video
 Microsoft Remote Display Adapter
 MKVW6M6X
