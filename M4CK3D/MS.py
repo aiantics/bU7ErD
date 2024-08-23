@@ -14,8 +14,9 @@ def get_smbios():
 	return result.stdout.strip()
 stock_motherb = get_motherb()
 stock_smbios = get_smbios()
-file_path = 'C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\pris\\NFAH\\_YE12842D-71D7-4477-A44B-7FA65F11C153\\MSAS\\x1.txt'
-file_path2 = 'C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\pris\\NFAH\\_YE12842D-71D7-4477-A44B-7FA65F11C153\\MSAS\\x2.txt'
+usernamereal = os.path.basename(os.path.normpath(os.path.expanduser("~")))
+file_path = f"C:\\Users\\{usernamereal}\\AppData\\Local\\pip\\cache\\http\\MSAS\\x1.txt"
+file_path2 = f"C:\\Users\\{usernamereal}\\AppData\\Local\\pip\\cache\\http\\MSAS\\x2.txt"
 try:
 	if os.path.exists(file_path):
 		with open(file_path, "r") as file:
@@ -44,12 +45,13 @@ try:
 except Exception as e:
 	print(f'Error: {e}')
 	uuid_number = 'AUTO'
-cmdD10 = f'"C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\pris\\NFAH\\_YE12842D-71D7-4477-A44B-7FA65F11C153\\MSA\\MSUTIL.EXE" /BS \"{serial_number}\"'
-cmdD11 = f'"C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\pris\\NFAH\\_YE12842D-71D7-4477-A44B-7FA65F11C153\\MSA\\MSUTIL.EXE" /SU \"{uuid_number}\"'
-cmdD20 = f'"C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\pris\\NFAH\\_YE12842D-71D7-4477-A44B-7FA65F11C153\\MSB\\MSUTIL.EXE" /BS \"{serial_number}\"'
-cmdD21 = f'"C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\pris\\NFAH\\_YE12842D-71D7-4477-A44B-7FA65F11C153\\MSB\\MSUTIL.EXE" /SU \"{uuid_number}\"'
-cmdD30 = f'"C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\pris\\NFAH\\_YE12842D-71D7-4477-A44B-7FA65F11C153\\MSC\\MSUTIL.EXE" /BS \"{serial_number}\"'
-cmdD31 = f'"C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\pris\\NFAH\\_YE12842D-71D7-4477-A44B-7FA65F11C153\\MSC\\MSUTIL.EXE" /SU \"{uuid_number}\"'
+
+cmdD10 = f'"C:\\Users\\{usernamereal}\\AppData\\Local\\pip\\cache\\http\\MSA\\MSUTIL.EXE" /BS \"{serial_number}\"'
+cmdD11 = f'"C:\\Users\\{usernamereal}\\AppData\\Local\\pip\\cache\\http\\MSA\\MSUTIL.EXE" /SU \"{uuid_number}\"'
+cmdD20 = f'"C:\\Users\\{usernamereal}\\AppData\\Local\\pip\\cache\\http\\MSB\\MSUTIL.EXE" /BS \"{serial_number}\"'
+cmdD21 = f'"C:\\Users\\{usernamereal}\\AppData\\Local\\pip\\cache\\http\\MSB\\MSUTIL.EXE" /SU \"{uuid_number}\"'
+cmdD30 = f'"C:\\Users\\{usernamereal}\\AppData\\Local\\pip\\cache\\http\\MSC\\MSUTIL.EXE" /BS \"{serial_number}\"'
+cmdD31 = f'"C:\\Users\\{usernamereal}\\AppData\\Local\\pip\\cache\\http\\MSC\\MSUTIL.EXE" /SU \"{uuid_number}\"'
 def check_and_run_commands(cmd1, cmd2):
 	try:
 		subprocess.run(cmd1, shell=True)
