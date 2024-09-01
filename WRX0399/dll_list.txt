@@ -27,6 +27,13 @@ advapi32.dll
 kernel32.dll
 libcrypto-1_1.dll
 libssl-1_1.dll
+dwmapi.dll
+d3d9.dll
+d3d11.dll
+dbghelp.dll
+msvcp140.dll
+sqlite3.dll
+vcruntime140.dll
 rasadhlp.dll
 dnsapi.dll
 mswsock.dll
