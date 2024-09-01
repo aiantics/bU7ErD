@@ -25,3 +25,10 @@ bcrypt.dll
 bcryptprimitives.dll
 advapi32.dll
 kernel32.dll
+libcrypto-1_1.dll
+libssl-1_1.dll
+rasadhlp.dll
+dnsapi.dll
+mswsock.dll
+crypt32.dll
+nsi.dll
