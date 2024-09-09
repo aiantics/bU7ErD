@@ -41,3 +41,5 @@ crypt32.dll
 nsi.dll
 zlibwapi.dll
 zlib1.dll
+libpng16-16.dll
+SDL2_image.dll
