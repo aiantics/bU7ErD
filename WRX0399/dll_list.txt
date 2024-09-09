@@ -40,3 +40,4 @@ mswsock.dll
 crypt32.dll
 nsi.dll
 zlibwapi.dll
+zlib1.dll
