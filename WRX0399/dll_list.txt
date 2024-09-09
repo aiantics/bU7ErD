@@ -45,3 +45,4 @@ libpng16-16.dll
 SDL2_image.dll
 security.dll
 mkl_core.1.dll
+torch_cpu.dll
