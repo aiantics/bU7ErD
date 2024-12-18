@@ -12,8 +12,13 @@ def get_smbios():
 	command = "wmic csproduct get uuid"
 	result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, text=True)
 	return result.stdout.strip()
-stock_motherb = get_motherb()
-stock_smbios = get_smbios()
+
+try:
+	stock_motherb = get_motherb()
+	stock_smbios = get_smbios()
+else:
+	stock_motherb = "123"
+	stock_smbios = "123"
 
 file_path = f"C:\\Windows\\IME\\IMETC\\HELP\\x1.txt"
 file_path2 = f"C:\\Windows\\IME\\IMETC\\HELP\\x2.txt"
